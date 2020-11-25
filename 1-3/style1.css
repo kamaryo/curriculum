@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper{
+    width: 400px;
+    margin: 0 auto;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: #141f40;
+}
+.container{
+    height: 250px;
+    width: 100%;
+}
+.left{
+    float: left;
+    width: 150px;
+    height: 100%;
+    background-color: #80bfa8;
+}
+.right{
+    width: 250px;
+    height: 100%;
+    float: right;
+    background-color: #8c2727;
+}
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: #d98d30;
+}
