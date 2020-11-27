@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper{
+    width: 400px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #141f40;
+}
+.squares{
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    margin: 20px;
+    float: right;
+    position: relative;
+    /* display: flex; */
+}
+.square{
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    /* margin: 10px 10px 10px 0; */
+}
+.square:first-child{
+    margin-left: 10px;
+}
+.square:nth-child(2){
+    left: 60px;
+}
+.square:nth-child(3){
+    right: 10px;
+}
+.container{
+    width: 100%;
+    height: 250px;
+}
+.left{
+    width: 150px;
+    height: 100%;
+    background-color: #80bfa8;
+    float: left;
+}
+.right{
+    width: 250px;
+    height: 100%;
+    background-color: #8c2727;
+    float: right;
+}
+.boxs{
+    width: 150px;
+    height: 170px;
+    margin: 40px 60px 40px 40px;
+}
+.box{
+    height: 40px;
+    width: 140px;
+    background-color: #ff863f;
+    border: 5px solid white;
+    margin-top: 10px;
+}
+.box:first-child{
+    margin-top: 0;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #d98d30;
+}
+
+@media screen and (max-width: 700px){
+    .wrapper{
+        width: 200px;
+    }
+    .header{
+        width: 100%;
+        height: auto;
+    }
+    .squares{
+        width: 60px;
+        height: 160px;
+        flex-direction: column;
+        margin: 20px 70px;
+    }
+    .square{
+        margin: 0 10px 10px 10px;
+        position: static;
+    }
+    .square:first-child{
+        margin-top: 10px;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    .left{
+        width: 200px;
+        height: 100px;
+        float: none;
+    }
+    .right{
+        width: 140px;
+        height: auto;
+        float: none;
+        padding: 20px 30px;
+    }
+    .boxs{
+        margin: 0;
+    }
+    .box{
+        width: 130px;
+    }
+    .footer{
+        width: 100%;
+    }
+}
